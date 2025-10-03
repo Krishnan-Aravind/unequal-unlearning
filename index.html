@@ -37,7 +37,7 @@
     main {
       max-width: 700px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 0 20px 100px 20px; /* extra padding so footer doesn't overlap */
     }
 
     section {
@@ -59,7 +59,7 @@
       bottom: 0;
     }
 
-    /* Link Preview Cards */
+    /* Link preview cards styling */
     .link-card {
       background: white;
       border-radius: 10px;
@@ -102,6 +102,16 @@
       font-size: 0.9em;
       color: #555;
     }
+
+    /* Citation styling */
+    pre {
+      background: #f0f0f0;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.9em;
+      line-height: 1.4em;
+    }
   </style>
 </head>
 <body>
@@ -128,42 +138,60 @@
     <section>
       <h2>Links</h2>
 
+      <!-- COLM 2025 / OpenReview Paper Card -->
       <div class="link-card">
-        <a href="https://arxiv.org/pdf/2504.05058" target="_blank">
+        <a href="https://openreview.net/pdf?id=Kd97lfFfTu" target="_blank">
           <div class="link-content">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/ArXiv_logo_2022.svg" alt="arXiv logo">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.IKcKYvBlVH9uketbh2tYpwHaDu?pid=Api" 
+                 alt="COLM 2025 logo" width="36" height="36">
             <div>
-              <h3>Arxiv Preprint</h3>
-              <p>Read the full preprint on arXiv.</p>
+              <h3>COLM 2025 Paper</h3>
+              <p>“Not All Data Are Unlearned Equally” (PDF)</p>
             </div>
           </div>
         </a>
       </div>
 
+      <!-- GitHub Code Card -->
       <div class="link-card">
         <a href="https://github.com/McGill-NLP/unequal-unlearning" target="_blank">
           <div class="link-content">
             <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub logo">
             <div>
               <h3>Code</h3>
-              <p>Implementation and experiments available on GitHub.</p>
+              <p>Implementation and experiments on GitHub.</p>
             </div>
           </div>
         </a>
       </div>
 
+      <!-- Hugging Face Data Card -->
       <div class="link-card">
         <a href="https://huggingface.co/collections/McGill-NLP/unequal-unlearning-67ff85082467b37f6f2bb20e" target="_blank">
           <div class="link-content">
             <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face logo">
             <div>
               <h3>Data</h3>
-              <p>Datasets and models available on Hugging Face.</p>
+              <p>Datasets and model weights on Hugging Face.</p>
             </div>
           </div>
         </a>
       </div>
 
+    </section>
+
+    <section>
+      <h2>Citation</h2>
+      <pre>
+@inproceedings{
+krishnan2025not,
+title={Not All Data Are Unlearned Equally},
+author={Aravind Krishnan and Siva Reddy and Marius Mosbach},
+booktitle={Second Conference on Language Modeling},
+year={2025},
+url={https://openreview.net/forum?id=Kd97lfFfTu}
+}
+      </pre>
     </section>
 
     <section>
