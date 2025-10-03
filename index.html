@@ -1,1 +1,179 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/ArXiv_logo_2022.svg" alt="Arxiv logo">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Not All Data Are Unlearned Equally</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #222;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2em;
+    }
+
+    header p {
+      margin: 5px 0;
+      font-size: 1.1em;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #222;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    sup {
+      font-size: 0.7em;
+    }
+
+    /* Link Preview Cards */
+    .link-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
+      transition: transform 0.15s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .link-card a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      padding: 12px;
+    }
+
+    .link-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .link-content img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+
+    .link-content h3 {
+      margin: 0;
+      font-size: 1.1em;
+      color: #222;
+    }
+
+    .link-content p {
+      margin: 2px 0 0 0;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Not All Data Are Unlearned Equally</h1>
+    <p>
+      Aravind Krishnan<sup>1</sup>, 
+      Siva Reddy<sup>2,3</sup>, 
+      Marius Mosbach<sup>2</sup>
+    </p>
+    <p>
+      <sup>1</sup> Saarland University &nbsp;|&nbsp;
+      <sup>2</sup> Mila – Quebec AI Institute &nbsp;|&nbsp;
+      <sup>3</sup> McGill University
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>We investigate how the strength of a model’s beliefs affects its ability to unlearn data, showing that data that is more frequent in the pretraining corpus is not forgotten easily.</p>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+
+      <div class="link-card">
+        <a href="https://arxiv.org/pdf/2504.05058" target="_blank">
+          <div class="link-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/ArXiv_logo_2022.svg" alt="Arxiv logo">
+            <div>
+              <h3>Arxiv Preprint</h3>
+              <p>Read the full preprint on arXiv.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="link-card">
+        <a href="https://github.com/McGill-NLP/unequal-unlearning" target="_blank">
+          <div class="link-content">
+            <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub logo">
+            <div>
+              <h3>Code</h3>
+              <p>Implementation and experiments available on GitHub.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="link-card">
+        <a href="https://huggingface.co/collections/McGill-NLP/unequal-unlearning-67ff85082467b37f6f2bb20e" target="_blank">
+          <div class="link-content">
+            <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face logo">
+            <div>
+              <h3>Data</h3>
+              <p>Datasets and models available on Hugging Face.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>akrishnan@lsv.uni-saarland.de</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Aravind Krishnan, Siva Reddy, Marius Mosbach</p>
+  </footer>
+</body>
+</html>
